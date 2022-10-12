@@ -5,19 +5,21 @@ export default function Hero() {
     const [active, setActive] = useState(false);
 
     useEffect(()=>{
+        let timeout = 1000;
+        if (window.innerWidth <= 768) timeout = 100;
         setTimeout(()=>{
             setActive(true);
-        }, 1000)
+        }, timeout)
     }, [])
 
     let myNameIsClass = "opacity-0 -translate-y-[20px] transition ease-in-out duration-500";
     if (active) myNameIsClass = "opacity-1 translate-y-0 transition ease-in-out duration-500 text-xl max-w-[500px] text-teal-300";
 
     let nameClass = "opacity-0 -translate-y-[20px] transition ease-in-out duration-500 ";
-    if (active) nameClass = "opacity-1 translate-y-0 transition ease-in-out duration-500 text-slate-300 text-7xl font-bold pt-6";
+    if (active) nameClass = "opacity-1 translate-y-0 transition ease-in-out duration-500 text-slate-300 text-5xl sm:text-6xl md:text-7xl font-bold pt-6";
 
     let jobClass = "opacity-0 -translate-y-[20px] transition ease-in-out duration-500 ";
-    if (active) jobClass = "opacity-1 translate-y-0 transition ease-in-out duration-500 text-slate-500 text-7xl font-bold pt-2";
+    if (active) jobClass = "opacity-1 translate-y-0 transition ease-in-out duration-500 text-slate-500 text-5xl sm:text-6xl md:text-7xl font-bold pt-2";
 
     let paraClass = "opacity-0 -translate-y-[20px] transition ease-in-out duration-500 ";
     if (active) paraClass = "opacity-1 translate-y-0 transition ease-in-out duration-500 text-slate-300 pt-8 max-w-[500px] font-semibold";
