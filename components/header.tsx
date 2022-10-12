@@ -1,16 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Dispatch, SetStateAction } from 'react';
 import {Bars3Icon} from '@heroicons/react/24/outline';
 import Nav from './nav';
+import Logo from './logo';
 
-const menuItems = [
-    "About",
-    "Experience",
-    "Work",
-    "Contact",
-    "Resume"
-]
-
-export default function Header() {
+export default function Header({menuItems, setShowMobileNav}: {menuItems: string[], setShowMobileNav: Dispatch<SetStateAction<boolean>>}) {
 
     const [active, setActive] = useState(false);
 
@@ -23,20 +16,21 @@ export default function Header() {
     // logo
     let logo = (
         <div className="py-4">
-            <h2 className="text-teal-300 font-bold tracking-tighter text-2xl">WP</h2>
+            <Logo />
         </div>
     )
 
     return (
-        <div className="fixed w-full">
+        <div className="fixed w-full z-10">
             <div className="max-w-[1536px] mx-auto flex justify-between items-center py-4 px-8">
                 {logo}
 
                 <Nav menuItems={menuItems} active={active} />
 
-                <div className='flex md:hidden'>
+                <div className='flex md:hidden' onClick={()=>setShowMobileNav(true)}>
                     <Bars3Icon className="w-9 h-9 stroke-teal-300" />
                 </div>
+
             </div>
         </div>
     )

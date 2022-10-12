@@ -22,8 +22,8 @@ export default function Nav({menuItems, active}: {menuItems: string[], active: b
     })
 
     return (
-        <div className="hidden md:flex md:items-center">
+        <nav className="hidden md:flex md:items-center">
             {menu}
-        </div>
+        </nav>
     )
 }
