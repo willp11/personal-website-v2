@@ -24,3 +24,12 @@ a {
     background: black;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Ubuntu-Mono;
+    src: url(../public/fonts/UbuntuMono-Regular.ttf);
+}
