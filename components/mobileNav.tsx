@@ -36,9 +36,9 @@ export default function MobileNav({menuItems, active, setActive}: {menuItems: st
                 <Logo />
             </div>
             <XMarkIcon className="absolute top-7 right-7 w-9 h-9 stroke-teal-300 cursor-pointer" onClick={()=>setActive(false)}/>
-            <div className="w-full flex flex-col items-center justify-center text-lg">
+            <nav className="w-full flex flex-col items-center justify-center text-lg">
                 {menu}
-            </div>
+            </nav>
         </div>
     )
 }
