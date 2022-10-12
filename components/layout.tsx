@@ -5,9 +5,9 @@ import MobileNav from "./mobileNav";
 
 const menuItems = [
     "About",
-    "Experience",
-    "Work",
+    "Portfolio",
     "Contact",
+    "Blog",
     "Resume"
 ]
 
