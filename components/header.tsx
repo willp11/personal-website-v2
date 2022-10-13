@@ -17,15 +17,15 @@ export default function Header({menuItems, setShowMobileNav}: {menuItems: string
     const [divClass, setDivClass] = useState("");
     useEffect(()=>{
         var prevScrollpos = window.pageYOffset;
-        let className = "fixed w-full z-20 bg-slate-900 shadow-md opacity-90 transition ease-in-out";
+        let className = "fixed w-full left-0 top-0 z-20 bg-slate-900 shadow-md opacity-90 transition ease-in-out";
         setDivClass(className);
         window.onscroll = function() {
             let currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos || currentScrollPos === 0) {
-                className = "fixed w-full z-20 bg-slate-900 shadow-md opacity-90 transition ease-in-out duration-300";
+                className = "fixed w-screen left-0 top-0 z-20 bg-slate-900 shadow-md opacity-90 transition ease-in-out duration-300";
                 setDivClass(className);
             } else {
-                className = "fixed w-full z-20 bg-slate-900 shadow-md opacity-90 transition ease-in-out duration-300 -translate-y-24"
+                className = "fixed w-screen left-0 top-0 z-20 bg-slate-900 shadow-md opacity-90 transition ease-in-out duration-300 -translate-y-24"
                 setDivClass(className);
             }
             prevScrollpos = currentScrollPos;
@@ -41,7 +41,7 @@ export default function Header({menuItems, setShowMobileNav}: {menuItems: string
 
     return (
         <div className={divClass}>
-            <div className="max-w-[1536px] mx-auto flex justify-between items-center py-4 px-8">
+            <div className="w-full max-w-[1536px] mx-auto flex justify-between items-center py-4 px-8">
                 {logo}
 
                 <Nav menuItems={menuItems} active={active} />
