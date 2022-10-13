@@ -3,6 +3,7 @@ import Header from "./header";
 import { useState } from "react";
 import MobileNav from "./mobileNav";
 import MediaSideLinks from "./mediaSideLinks";
+import Email from "./email";
 
 const menuItems = [
     "About",
@@ -24,6 +25,7 @@ export default function Layout({children}: {children: React.ReactNode}) {
                 {children}
             </div>
             <MediaSideLinks />
+            <Email />
         </div>
     )
 }

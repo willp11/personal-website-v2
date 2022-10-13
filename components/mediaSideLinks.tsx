@@ -1,13 +1,27 @@
 import GithubLogo from "./logos/githubLogo";
 import TwitterLogo from "./logos/twitterLogo";
 import LinkedinLogo from "./logos/linkedinLogo";
+import {useState, useEffect} from 'react';
 
 export default function MediaSideLinks() {
+
+    const [active, setActive] = useState(false);
+
+    useEffect(()=>{
+        let timeout = 2000;
+        setTimeout(()=>{
+            setActive(true);
+        }, timeout)
+    }, [])
+
+    let className = "opacity-0 -translate-y-[20px] transition ease-in-out duration-500";
+    if (active) className = "opacity-1 translate-y-0 transition ease-in-out duration-500 text-xl max-w-[500px] text-teal-300 hidden xl:flex flex-col items-center justify-center fixed bottom-0 left-8";
+
     return (
-        <div className="hidden sm:fixed sm:bottom-0 sm:left-8 sm:flex sm:flex-col sm:items-center sm:justify-center">
+        <div className={className}>
             <TwitterLogo size="medium" />
-            <span className="sm:my-6 xl:my-8"><GithubLogo size="medium" /></span>
-            <span className="sm:mb-6 xl:mb-8"><LinkedinLogo size="medium" /></span>
+            <span className="my-6 xl:my-8"><GithubLogo size="medium" /></span>
+            <span className="mb-6 xl:mb-8"><LinkedinLogo size="medium" /></span>
             <div className="w-[1px] h-[70px] xl:h-[100px] bg-slate-500"></div>
         </div>
     )
