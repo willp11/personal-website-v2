@@ -3,7 +3,7 @@ import React, {useRef, useState, useEffect} from 'react';
 const options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.5
+    threshold: 0.1
 }
 
 export default function Observer({children}: {children: React.ReactNode}) {
@@ -14,6 +14,7 @@ export default function Observer({children}: {children: React.ReactNode}) {
     const callbackFunction = (entries: any) => {
         const [ entry ] = entries;
         if (entry.isIntersecting) setIsVisible(true);
+        console.log(entry)
     }
 
     useEffect(()=>{
@@ -28,7 +29,7 @@ export default function Observer({children}: {children: React.ReactNode}) {
     if (isVisible) className="w-full h-full opacity-100 -translate-x-0 transition in-ease-out duration-1000 flex flex-col md:flex-row";
 
     return (
-        <section ref={containerRef} className="w-full min-h-[400px] max-w-[1000px] mx-auto pb-8">
+        <section ref={containerRef} className="w-full min-h-[400px] max-w-[1000px] mx-auto">
             <div className={className}>
                 {children}
             </div>

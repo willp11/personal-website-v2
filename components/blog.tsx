@@ -4,7 +4,7 @@ import BlogArticle from "./blogArticle";
 export default function Blog() {
     return (
         <Observer>
-            <div className="w-full pb-8">
+            <div className="w-full py-8">
                 <h2>
                     <span className="text-2xl text-teal-300" style={{fontFamily: 'Ubuntu-Mono'}}>04. </span>
                     <span 
