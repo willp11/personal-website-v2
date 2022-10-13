@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./header";
 import { useState } from "react";
 import MobileNav from "./mobileNav";
+import MediaSideLinks from "./mediaSideLinks";
 
 const menuItems = [
     "About",
@@ -22,6 +23,7 @@ export default function Layout({children}: {children: React.ReactNode}) {
             <div className="max-w-[1536px] mx-auto px-8">
                 {children}
             </div>
+            <MediaSideLinks />
         </div>
     )
 }

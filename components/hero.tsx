@@ -30,7 +30,7 @@ export default function Hero() {
     return (
         <div className="w-full h-[100vh] flex justify-center items-center">
             <div className="w-full max-w-[1000px]">
-                <p className={myNameIsClass} style={{transitionDelay: '200ms'}}><span className="absolute animate-waving-hand">&#128075;</span><span className="pl-8"> Hi, my name is</span></p>
+                <p className={myNameIsClass} style={{transitionDelay: '200ms', fontFamily: "Ubuntu-Mono"}}><span className="absolute animate-waving-hand">&#128075;</span><span className="pl-8"> Hi, my name is</span></p>
                 <h1 className={nameClass} style={{transitionDelay: '400ms'}}>William Page</h1>
                 <h2 className={jobClass} style={{transitionDelay: '600ms'}}>Software Engineer</h2>
                 <p className={paraClass} style={{transitionDelay: '800ms'}}>I'm a software engineer specializing in building full-stack web applications with React/NextJS frontend and Python Django backend. My goal is to build large-scale applications used by millions of people.</p>

@@ -41,7 +41,7 @@ export default function Header({menuItems, setShowMobileNav}: {menuItems: string
 
     return (
         <div className={divClass}>
-            <div className="w-full max-w-[1536px] mx-auto flex justify-between items-center py-4 px-8">
+            <div className="w-full mx-auto flex justify-between items-center py-4 px-8">
                 {logo}
 
                 <Nav menuItems={menuItems} active={active} />

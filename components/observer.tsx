@@ -14,7 +14,6 @@ export default function Observer({children}: {children: React.ReactNode}) {
     const callbackFunction = (entries: any) => {
         const [ entry ] = entries;
         if (entry.isIntersecting) setIsVisible(true);
-        console.log(entry)
     }
 
     useEffect(()=>{
