@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Hero from '../components/hero';
 import About from '../components/about';
 import Portfolio from '../components/portfolio';
+import Contact from '../components/contact';
 
 const Home: NextPage = () => {
 
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
                 <Hero />
                 <About />
                 <Portfolio />
+                <Contact />
             </div>
         </div>
     )
