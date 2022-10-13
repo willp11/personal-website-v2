@@ -23,8 +23,10 @@ export default function MobileNav({menuItems, active, setActive}: {menuItems: st
         } else {
             return (
                 <div key={i} style={{fontFamily: "Ubuntu-Mono", padding: "1rem" }}>
-                    <span className="text-teal-300 cursor-pointer">0{i+1}. </span>
-                    <span className="text-slate-300 group-hover:text-teal-300 transition duration-500 ease-in-out">{item}</span>
+                    <a href={`#${item}`} className="group" onClick={()=>setActive(false)}>
+                        <span className="text-teal-300 cursor-pointer">0{i+1}. </span>
+                        <span className="text-slate-300 group-hover:text-teal-300 transition duration-500 ease-in-out">{item}</span>
+                    </a>
                 </div>
             )
         }

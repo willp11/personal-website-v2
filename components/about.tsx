@@ -27,7 +27,7 @@ export default function About() {
 
     return (
         <Observer>
-            <div className="md:pr-16">
+            <div id="About" className="md:pr-16">
                 <h2>
                     <span className="text-2xl text-teal-300" style={{fontFamily: 'Ubuntu-Mono'}}>01. </span>
                     <span className="text-3xl font-bold text-slate-300 after:h-[1px] after:w-[100px] xs:after:w-[200px] sm:after:w-[300px] after:inline after:absolute after:mt-5 after:ml-5 after:bg-slate-600">About Me</span>

@@ -52,7 +52,7 @@ export default function Portfolio() {
 
     return (
         <Observer>
-            <div className="w-full overflow-x-hidden mt-16 mb-8">
+            <div id="Portfolio" className="w-full overflow-x-hidden mt-16 mb-8">
                 <h2 className="mb-8">
                     <span className="text-2xl text-teal-300" style={{fontFamily: 'Ubuntu-Mono'}}>02. </span>
                     <span 

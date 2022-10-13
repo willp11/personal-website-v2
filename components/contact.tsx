@@ -6,7 +6,7 @@ import LinkedinLogo from "./logos/linkedinLogo";
 export default function Contact() {
     return (
         <Observer>
-            <div className="w-full mb-16">
+            <div id="Contact" className="w-full mb-16">
                 <h2 className="mb-8">
                     <span className="text-2xl text-teal-300" style={{fontFamily: 'Ubuntu-Mono'}}>03. </span>
                     <span 
