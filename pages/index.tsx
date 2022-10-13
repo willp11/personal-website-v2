@@ -4,6 +4,7 @@ import Hero from '../components/hero';
 import About from '../components/about';
 import Portfolio from '../components/portfolio';
 import Contact from '../components/contact';
+import Blog from '../components/blog';
 
 const Home: NextPage = () => {
 
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
                 <About />
                 <Portfolio />
                 <Contact />
+                <Blog />
             </div>
         </div>
     )

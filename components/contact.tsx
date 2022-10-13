@@ -3,7 +3,7 @@ import Observer from "./observer";
 export default function Contact() {
     return (
         <Observer>
-            <div className="w-full pb-8">
+            <div className="w-full">
                 <h2 className="mb-8">
                     <span className="text-2xl text-teal-300" style={{fontFamily: 'Ubuntu-Mono'}}>03. </span>
                     <span 

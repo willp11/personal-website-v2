@@ -109,6 +109,22 @@ export default function Portfolio() {
                         </div>
                     </Project>
                 </div>
+
+                <div className="w-full flex flex-col items-start overflow-hidden">
+                    <Project name="Print on Demand" side="left">
+                        <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
+                            <p className="text-slate-400 text-left">
+                                <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 
+                                Users can upload images and add text to <span className="text-teal-300">create clothing designs</span>.
+                                They can save their designs to use again and apply to all products found in the store.
+                                Designs are <span className="text-teal-300">transformed into high-resolution images</span>, ready for printing onto apparel.
+                            </p>
+                        </div>
+                        <div className="flex flex-wrap mt-4 z-10">
+                            {p2_tech_list}
+                        </div>
+                    </Project>
+                </div>
             </div>
         </Observer>
     )

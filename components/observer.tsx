@@ -25,10 +25,10 @@ export default function Observer({children}: {children: React.ReactNode}) {
     }, [])
 
     let className="w-full h-full opacity-0 -translate-x-full transition in-ease-out duration-1000";
-    if (isVisible) className="w-full h-full opacity-100 -translate-x-0 transition in-ease-out duration-1000 flex flex-col md:flex-row pb-8";
+    if (isVisible) className="w-full h-full opacity-100 -translate-x-0 transition in-ease-out duration-1000 flex flex-col md:flex-row";
 
     return (
-        <section ref={containerRef} className="w-full min-h-[500px] max-w-[1000px] mx-auto">
+        <section ref={containerRef} className="w-full min-h-[400px] max-w-[1000px] mx-auto pb-8">
             <div className={className}>
                 {children}
             </div>
