@@ -5,8 +5,8 @@ import Logo from "./logo";
 export default function MobileNav({menuItems, active, setActive}: {menuItems: string[], active: boolean, setActive: Dispatch<SetStateAction<boolean>>}) {
 
     // transition menu in
-    let className = "w-full h-screen fixed top-0 left-0 bg-slate-800 z-10 -translate-x-full transition ease-in-out duration-300";
-    if (active) className = "w-full h-screen fixed top-0 left-0 bg-slate-800 z-10 -translate-x-0 md:-translate-x-full transition ease-in-out duration-300 flex items-center justify-center";
+    let className = "w-full h-screen fixed top-0 left-0 bg-slate-800 z-20 -translate-x-full transition ease-in-out duration-300";
+    if (active) className = "w-full h-screen fixed top-0 left-0 bg-slate-800 z-20 -translate-x-0 md:-translate-x-full transition ease-in-out duration-300 flex items-center justify-center";
 
     // menu items
     let menu = menuItems.map((item, i)=>{

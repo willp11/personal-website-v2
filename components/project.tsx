@@ -9,13 +9,12 @@ export default function Project({name, side, children}: {name: string, side: Sid
     let H2className = "";
     let divClassName = "";
     if (side === "right"){
-        H2className = "text-slate-300 font-bold text-2xl pb-8 before:w-[600px] before:h-[340px] before:absolute before:-left-full before:top-0 before:bg-teal-800 before:opacity-50 before:inset-0 before:-z-10";
-        divClassName = "relative mb-16 flex flex-col items-end";
+        H2className = "text-slate-300 font-bold text-2xl pb-8 before:w-full md:before:w-full before:h-full before:absolute before:left-0 md:before:-left-[80%] before:top-0 before:bg-[url('/images/pod-app.jpg')] before:bg-cover before:opacity-20 md:before:opacity-40 before:inset-0 before:-z-10";
+        divClassName = "relative mb-16 flex flex-col items-end p-8 md:p-0";
     } else if (side === "left") {
-        H2className = "text-slate-300 font-bold text-2xl pb-8 before:w-[600px] before:h-[340px] before:absolute before:left-[80%] before:top-0 before:bg-teal-800 before:opacity-50 before:inset-0 before:-z-10";
-        divClassName = "relative mb-16 flex flex-col items-start";
+        H2className = "text-slate-300 font-bold text-2xl pb-8 before:w-full md:before:w-full before:h-full before:absolute before:left-0 md:before:left-[80%] before:top-0 before:bg-[url('/images/pod-app.jpg')] before:bg-cover before:opacity-20 md:before:opacity-40 before:inset-0 before:-z-10";
+        divClassName = "relative mb-16 flex flex-col items-start p-8 md:p-0";
     }
-
 
     return (
         <div className={divClassName}>

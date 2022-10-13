@@ -17,15 +17,15 @@ export default function Header({menuItems, setShowMobileNav}: {menuItems: string
     const [divClass, setDivClass] = useState("");
     useEffect(()=>{
         var prevScrollpos = window.pageYOffset;
-        let className = "fixed w-full z-10 bg-slate-900 shadow-md opacity-90 transition ease-in-out";
+        let className = "fixed w-full z-20 bg-slate-900 shadow-md opacity-90 transition ease-in-out";
         setDivClass(className);
         window.onscroll = function() {
             let currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos || currentScrollPos === 0) {
-                className = "fixed w-full z-10 bg-slate-900 shadow-md opacity-90 transition ease-in-out duration-300";
+                className = "fixed w-full z-20 bg-slate-900 shadow-md opacity-90 transition ease-in-out duration-300";
                 setDivClass(className);
             } else {
-                className = "fixed w-full z-10 bg-slate-900 shadow-md opacity-90 transition ease-in-out duration-300 -translate-y-24"
+                className = "fixed w-full z-20 bg-slate-900 shadow-md opacity-90 transition ease-in-out duration-300 -translate-y-24"
                 setDivClass(className);
             }
             prevScrollpos = currentScrollPos;
