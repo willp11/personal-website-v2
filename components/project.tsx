@@ -22,8 +22,8 @@ export default function Project({name, side, children}: {name: string, side: Sid
             <h2 className={H2className}>{name}</h2>
             {children}
             <div className="flex mt-4" aria-label="External Link">
-                <ArrowTopRightOnSquareIcon className="w-6 h-6 stroke-slate-300 hover:stroke-teal-300 transition ease-in-out duration-300 cursor-pointer" />
-                <GithubLogo />
+                <ArrowTopRightOnSquareIcon className="w-6 h-6 stroke-slate-300 hover:stroke-teal-300 transition ease-in-out duration-300 cursor-pointer mr-4" />
+                <GithubLogo size="small" />
             </div>
         </div>
     )
