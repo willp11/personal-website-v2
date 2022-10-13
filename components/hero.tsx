@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import HeroAnimation from "./heroAnimation";
 
 export default function Hero() {
 
@@ -29,7 +30,7 @@ export default function Hero() {
 
     return (
         <div className="w-full h-[100vh] flex justify-center items-center">
-            <div className="w-full max-w-[1000px]">
+            <div className="w-full max-w-[800px]">
                 <p className={myNameIsClass} style={{transitionDelay: '200ms', fontFamily: "Ubuntu-Mono"}}><span className="absolute animate-waving-hand">&#128075;</span><span className="pl-8"> Hi, my name is</span></p>
                 <h1 className={nameClass} style={{transitionDelay: '400ms'}}>William Page</h1>
                 <h2 className={jobClass} style={{transitionDelay: '600ms'}}>Software Engineer</h2>
@@ -38,6 +39,7 @@ export default function Hero() {
                     <div className="text-teal-300 border border-teal-300 px-4 py-2 mt-8 w-[250px] cursor-pointer rounded-md hover:bg-slate-800 transition duration-500 ease-in-out">Check out my portfolio!</div>
                 </div>
             </div>
+            <HeroAnimation />
         </div>
     )
 }
