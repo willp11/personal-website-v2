@@ -63,7 +63,7 @@ export default function Portfolio() {
                         Portfolio</span>
                 </h2>
                 <div className={width <= 768 ? "w-full flex flex-col items-start" : "w-full flex flex-col items-end"}>
-                    <Project name="Print on Demand" side={width <= 768 ? "left" : "right"}>
+                    <Project name="Print on Demand" side={width <= 768 ? "left" : "right"} index={0}>
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className={width <= 768 ? "text-slate-400 text-left" : "text-slate-400 text-right"}>
                                 <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 
@@ -79,7 +79,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="w-full flex flex-col items-start overflow-hidden">
-                    <Project name="Print on Demand" side="left">
+                    <Project name="Print on Demand" side="left" index={1}>
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className="text-slate-400 text-left">
                                 <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 
@@ -95,7 +95,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className={width <= 768 ? "w-full flex flex-col items-start" : "w-full flex flex-col items-end"}>
-                    <Project name="Print on Demand" side={width <= 768 ? "left" : "right"}>
+                    <Project name="Print on Demand" side={width <= 768 ? "left" : "right"} index={2}>
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className={width <= 768 ? "text-slate-400 text-left" : "text-slate-400 text-right"}>
                                 <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 
@@ -111,7 +111,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="w-full flex flex-col items-start overflow-hidden">
-                    <Project name="Print on Demand" side="left">
+                    <Project name="Print on Demand" side="left" index={3}>
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className="text-slate-400 text-left">
                                 <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 

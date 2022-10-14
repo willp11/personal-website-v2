@@ -6,12 +6,8 @@ import Portfolio from '../components/portfolio';
 import Contact from '../components/contact';
 import Blog from '../components/blog';
 import ProjectImages from '../components/projectImages';
-import { useState } from 'react';
-import {useImagesModal} from '../hooks/useImagesModal';
 
 const Home: NextPage = () => {
-
-    const { showProjectImages, setShowProjectImages, projectIndex, setProjectIndex } = useImagesModal();
 
     return (
         <div>
