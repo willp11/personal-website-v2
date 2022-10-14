@@ -5,8 +5,12 @@ import About from '../components/about';
 import Portfolio from '../components/portfolio';
 import Contact from '../components/contact';
 import Blog from '../components/blog';
+import ProjectImages from '../components/projectImages';
+import { useState } from 'react';
 
 const Home: NextPage = () => {
+
+    const [showProjectImages, setShowProjectImages] = useState(false);
 
     return (
         <div>
@@ -16,9 +20,10 @@ const Home: NextPage = () => {
             <div>
                 <Hero />
                 <About />
-                <Portfolio />
+                <Portfolio setShowProjectImages={setShowProjectImages} />
                 <Contact />
                 <Blog />
+                <ProjectImages show={showProjectImages} setShow={setShowProjectImages} />
             </div>
         </div>
     )
