@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Observer from "./observer";
 import Project from "./project";
-import { Dispatch, SetStateAction } from "react";
 
 const project1_technologies = [
     "Typescript",
@@ -19,20 +18,20 @@ const project2_technologies = [
     "Django"
 ]
 
-export default function Portfolio({setShowProjectImages}: {setShowProjectImages: Dispatch<SetStateAction<boolean>>}) {
+export default function Portfolio() {
 
+    // check window size
     const [width, setWidth] = useState(0);
-
     function windowResized() {
         setWidth(window.innerWidth);
     }
-
     useEffect(() => {
         setWidth(window.innerWidth);
         window.addEventListener("resize", windowResized); 
         return () => window.removeEventListener("resize", windowResized);
     }, []);
 
+    // project technology lists
     const p1_tech_list = project1_technologies.map(tech=>{
         return (
             <p key={`p1-${tech}`} style={{fontFamily: "Ubuntu-Mono"}} className={width <= 768 ? "text-slate-300 pr-8 hover:text-teal-300" : "text-slate-300 pl-8 hover:text-teal-300"}>{tech}</p>
@@ -64,7 +63,7 @@ export default function Portfolio({setShowProjectImages}: {setShowProjectImages:
                         Portfolio</span>
                 </h2>
                 <div className={width <= 768 ? "w-full flex flex-col items-start" : "w-full flex flex-col items-end"}>
-                    <Project name="Print on Demand" side={width <= 768 ? "left" : "right"} setShowProjectImages={setShowProjectImages}>
+                    <Project name="Print on Demand" side={width <= 768 ? "left" : "right"}>
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className={width <= 768 ? "text-slate-400 text-left" : "text-slate-400 text-right"}>
                                 <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 
@@ -80,7 +79,7 @@ export default function Portfolio({setShowProjectImages}: {setShowProjectImages:
                 </div>
 
                 <div className="w-full flex flex-col items-start overflow-hidden">
-                    <Project name="Print on Demand" side="left" setShowProjectImages={setShowProjectImages}>
+                    <Project name="Print on Demand" side="left">
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className="text-slate-400 text-left">
                                 <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 
@@ -96,7 +95,7 @@ export default function Portfolio({setShowProjectImages}: {setShowProjectImages:
                 </div>
 
                 <div className={width <= 768 ? "w-full flex flex-col items-start" : "w-full flex flex-col items-end"}>
-                    <Project name="Print on Demand" side={width <= 768 ? "left" : "right"} setShowProjectImages={setShowProjectImages}>
+                    <Project name="Print on Demand" side={width <= 768 ? "left" : "right"}>
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className={width <= 768 ? "text-slate-400 text-left" : "text-slate-400 text-right"}>
                                 <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 
@@ -112,7 +111,7 @@ export default function Portfolio({setShowProjectImages}: {setShowProjectImages:
                 </div>
 
                 <div className="w-full flex flex-col items-start overflow-hidden">
-                    <Project name="Print on Demand" side="left" setShowProjectImages={setShowProjectImages}>
+                    <Project name="Print on Demand" side="left">
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className="text-slate-400 text-left">
                                 <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 

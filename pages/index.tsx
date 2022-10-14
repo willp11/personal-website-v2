@@ -7,10 +7,11 @@ import Contact from '../components/contact';
 import Blog from '../components/blog';
 import ProjectImages from '../components/projectImages';
 import { useState } from 'react';
+import {useImagesModal} from '../hooks/useImagesModal';
 
 const Home: NextPage = () => {
 
-    const [showProjectImages, setShowProjectImages] = useState(false);
+    const { showProjectImages, setShowProjectImages, projectIndex, setProjectIndex } = useImagesModal();
 
     return (
         <div>
@@ -20,10 +21,10 @@ const Home: NextPage = () => {
             <div>
                 <Hero />
                 <About />
-                <Portfolio setShowProjectImages={setShowProjectImages} />
+                <Portfolio/>
                 <Contact />
                 <Blog />
-                <ProjectImages show={showProjectImages} setShow={setShowProjectImages} />
+                <ProjectImages />
             </div>
         </div>
     )

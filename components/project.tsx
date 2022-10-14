@@ -1,17 +1,18 @@
 import { ArrowTopRightOnSquareIcon, CameraIcon, VideoCameraIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import GithubLogo from "./logos/githubLogo";
-import { Dispatch, SetStateAction } from "react";
+import {useImagesModal} from '../hooks/useImagesModal';
 
 type Side = 'left' | 'right';
 interface IProjectProps {
     name: string,
     side: Side,
-    setShowProjectImages: Dispatch<SetStateAction<boolean>>,
     children: React.ReactNode
 }
 
-export default function Project({name, side, setShowProjectImages, children}: IProjectProps) {
+export default function Project({name, side, children}: IProjectProps) {
+
+    const { setShowProjectImages } = useImagesModal();
 
     let H2className = "";
     let divClassName = "";
@@ -30,7 +31,7 @@ export default function Project({name, side, setShowProjectImages, children}: IP
             {children}
             <div className="flex mt-4" aria-label="External Link">
                 <VideoCameraIcon className="w-6 h-6 stroke-slate-300 hover:stroke-teal-300 transition ease-in-out duration-300 cursor-pointer mr-4" />
-                <CameraIcon onClick={()=>setShowProjectImages(true)} className="w-6 h-6 stroke-slate-300 hover:stroke-teal-300 transition ease-in-out duration-300 cursor-pointer mr-4" />
+                {setShowProjectImages && <CameraIcon onClick={()=>setShowProjectImages(true)} className="w-6 h-6 stroke-slate-300 hover:stroke-teal-300 transition ease-in-out duration-300 cursor-pointer mr-4" />}
                 <ArrowTopRightOnSquareIcon className="w-6 h-6 stroke-slate-300 hover:stroke-teal-300 transition ease-in-out duration-300 cursor-pointer mr-4" />
                 <GithubLogo size="small" />
             </div>
