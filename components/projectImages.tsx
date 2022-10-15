@@ -6,25 +6,25 @@ import { Carousel } from 'react-responsive-carousel';
 
 const projectImageLocations = [ 
     [
-        "/images/pod-app.jpg",
         "/images/pod-app-1.jpg",
         "/images/pod-app-2.jpg",
+        "/images/pod-app-3.jpg",
     ],
     [
-        "/images/parent-teacher-app.jpg",
-        "/images/parent-teacher-app.jpg",
-        "/images/parent-teacher-app.jpg"
+        "/images/pod-app-1.jpg",
+        "/images/pod-app-2.jpg",
+        "/images/pod-app-3.jpg",
     ],
     [
-        "/images/pod-app.jpg",
-        "/images/pod-app.jpg",
-        "/images/pod-app.jpg",
+        "/images/pod-app-1.jpg",
+        "/images/pod-app-2.jpg",
+        "/images/pod-app-3.jpg",
     ],
     [
-        "/images/pod-app.jpg",
-        "/images/pod-app.jpg",
-        "/images/pod-app.jpg",
-    ]
+        "/images/pod-app-1.jpg",
+        "/images/pod-app-2.jpg",
+        "/images/pod-app-3.jpg",
+    ],
 ]
 
 export default function ProjectImages() {
@@ -37,12 +37,12 @@ export default function ProjectImages() {
             <Carousel autoPlay={true} interval={5000} showStatus={false} infiniteLoop={true} showThumbs={false} transitionTime={800}>
                 {projectImageLocations[projectIndex].map((img, idx)=>{
                     return (
-                        <div>
+                        <div key={idx}>
                             <Image
                                 src={projectImageLocations[projectIndex][idx]}
                                 layout="responsive"
-                                width={500}
-                                height={350}
+                                width={1920}
+                                height={1080}
                                 alt="slideshow"
                             />
                         </div>
