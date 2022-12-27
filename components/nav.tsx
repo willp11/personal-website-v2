@@ -13,8 +13,8 @@ export default function Nav({menuItems, active}: {menuItems: string[], active: b
             )
         } else {
             return ( 
-                <a href={`#${item}`}>
-                    <div key={i} style={{ transitionDelay: `${i * 200}ms`, fontFamily: "Ubuntu-Mono", padding: "1rem" }} className={className}>
+                <a key={i} href={`#${item}`}>
+                    <div style={{ transitionDelay: `${i * 200}ms`, fontFamily: "Ubuntu-Mono", padding: "1rem" }} className={className}>
                         <span className="text-teal-300 cursor-pointer">0{i+1}. </span>
                         <span className="text-slate-300 group-hover:text-teal-300 transition duration-500 ease-in-out">{item}</span>
                     </div>

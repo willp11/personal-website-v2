@@ -11,14 +11,14 @@ const projectImageLocations = [
         "/images/pod-app-3.jpg",
     ],
     [
-        "/images/pod-app-1.jpg",
-        "/images/pod-app-2.jpg",
-        "/images/pod-app-3.jpg",
+        "/images/parent-teacher-app-1.png",
+        "/images/parent-teacher-app-2.png",
+        "/images/parent-teacher-app-3.png",
     ],
     [
-        "/images/pod-app-1.jpg",
-        "/images/pod-app-2.jpg",
-        "/images/pod-app-3.jpg",
+        "/images/ecommerce-app-2.png",
+        "/images/ecommerce-app-1.png",
+        "/images/ecommerce-app-3.png",
     ],
     [
         "/images/pod-app-1.jpg",
