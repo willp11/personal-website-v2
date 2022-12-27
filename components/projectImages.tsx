@@ -21,9 +21,10 @@ const projectImageLocations = [
         "/images/ecommerce-app-3.png",
     ],
     [
-        "/images/pod-app-1.jpg",
-        "/images/pod-app-2.jpg",
-        "/images/pod-app-3.jpg",
+        "/images/crypto-portfolio-app-wide-1.PNG",
+        "/images/crypto-portfolio-app-wide-2.PNG",
+        "/images/crypto-portfolio-app-wide-3.PNG",
+        "/images/crypto-portfolio-app-wide-4.PNG"
     ],
 ]
 

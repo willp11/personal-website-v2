@@ -91,7 +91,7 @@ export default function Portfolio() {
                         index={0} 
                         beforeImgClass="before:bg-[url('/images/pod-app.jpg')]"
                         github="https://github.com/willp11/print-on-demand"
-                        liveUrl="https://print-on-demand-v14a.vercel.app/customizer"
+                        liveUrl="https://print-on-demand-v14a.vercel.app"
                     >
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className={width <= 768 ? "text-slate-400 text-left" : "text-slate-400 text-right"}>
@@ -113,8 +113,8 @@ export default function Portfolio() {
                         side="left" 
                         index={1} 
                         beforeImgClass="before:bg-[url('/images/parent-teacher-app.png')]"
-                        github="https://teacher-parent-communication-app.vercel.app"
-                        liveUrl="https://github.com/willp11/Teacher-Parent-Communication-App"
+                        github="https://github.com/willp11/Teacher-Parent-Communication-App"
+                        liveUrl="https://teacher-parent-communication-app.vercel.app"
                     >
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className="text-slate-400 text-left">
@@ -140,7 +140,7 @@ export default function Portfolio() {
                     >
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className={width <= 768 ? "text-slate-400 text-left" : "text-slate-400 text-right"}>
-                                <span className="text-teal-300">E-commerce</span> website for jewellry store integrated with <span className="text-teal-300">Stripe payment processor</span>. 
+                                <span className="text-teal-300">E-commerce</span> website for jewelry store integrated with <span className="text-teal-300">Stripe payment processor</span>. 
                                 The frontend uses NextJS Static Site Generation to ensure <span className="text-teal-300">fast loading times</span>.
                                 The site receives a <span className="text-teal-300">perfect accessibility score</span> on Google Lighthouse.
                                 The backend built with Django enables the store owner to <span className="text-teal-300">manage product information with Django Admin</span>.
@@ -154,10 +154,10 @@ export default function Portfolio() {
 
                 <div className="w-full flex flex-col items-start overflow-hidden">
                     <Project 
-                        name="Print on Demand" 
+                        name="Crypto Portfolio" 
                         side="left" 
                         index={3} 
-                        beforeImgClass="before:bg-[url('/images/pod-app.jpg')]"
+                        beforeImgClass="before:bg-[url('/images/crypto-portfolio-app-wide-1.PNG')]"
                         github="https://github.com/willp11/crypto-tracker-app"
                         liveUrl="https://snack.expo.dev/@willp111/portfolio-app"
                     >
