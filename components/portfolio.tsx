@@ -8,7 +8,7 @@ const project1_technologies = [
     "Next JS",
     "Tailwind",
     "Django",
-    "SQL"
+    "Docker",
 ]
 
 const project2_technologies = [
@@ -16,7 +16,7 @@ const project2_technologies = [
     "React JS",
     "Tailwind",
     "Django",
-    "SQL"
+    "Docker",
 ]
 
 const project3_technologies = [
@@ -25,7 +25,7 @@ const project3_technologies = [
     "Next JS",
     "Tailwind",
     "Django",
-    "SQL"
+    "Docker",
 ]
 
 const project4_technologies = [
@@ -85,7 +85,14 @@ export default function Portfolio() {
                         Portfolio</span>
                 </h2>
                 <div className={width <= 768 ? "w-full flex flex-col items-start" : "w-full flex flex-col items-end"}>
-                    <Project name="Print on Demand" side={width <= 768 ? "left" : "right"} index={0} beforeImgClass="before:bg-[url('/images/pod-app.jpg')]">
+                    <Project 
+                        name="Print on Demand" 
+                        side={width <= 768 ? "left" : "right"} 
+                        index={0} 
+                        beforeImgClass="before:bg-[url('/images/pod-app.jpg')]"
+                        github="https://github.com/willp11/print-on-demand"
+                        liveUrl="https://print-on-demand-v14a.vercel.app/customizer"
+                    >
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className={width <= 768 ? "text-slate-400 text-left" : "text-slate-400 text-right"}>
                                 <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 
@@ -101,7 +108,14 @@ export default function Portfolio() {
                 </div>
 
                 <div className="w-full flex flex-col items-start overflow-hidden">
-                    <Project name="Parent-Teacher Communication" side="left" index={1} beforeImgClass="before:bg-[url('/images/parent-teacher-app.png')]">
+                    <Project 
+                        name="Parent-Teacher Communication" 
+                        side="left" 
+                        index={1} 
+                        beforeImgClass="before:bg-[url('/images/parent-teacher-app.png')]"
+                        github="https://teacher-parent-communication-app.vercel.app"
+                        liveUrl="https://github.com/willp11/Teacher-Parent-Communication-App"
+                    >
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className="text-slate-400 text-left">
                                 <span className="text-teal-300">Web app</span> that enables teachers to manage their classroom and communicate with parents. 
@@ -116,7 +130,14 @@ export default function Portfolio() {
                 </div>
 
                 <div className={width <= 768 ? "w-full flex flex-col items-start" : "w-full flex flex-col items-end"}>
-                    <Project name="Jewelry E-commerce Store" side={width <= 768 ? "left" : "right"} index={2} beforeImgClass="before:bg-[url('/images/ecommerce-app-1.png')]">
+                    <Project 
+                        name="Jewelry E-commerce Store" 
+                        side={width <= 768 ? "left" : "right"} 
+                        index={2} 
+                        beforeImgClass="before:bg-[url('/images/ecommerce-app-1.png')]"
+                        github="https://github.com/willp11/nextjs-ts-ecommerce"
+                        liveUrl="https://nextjs-ts-ecommerce.vercel.app"
+                    >
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className={width <= 768 ? "text-slate-400 text-left" : "text-slate-400 text-right"}>
                                 <span className="text-teal-300">E-commerce</span> website for jewellry store integrated with <span className="text-teal-300">Stripe payment processor</span>. 
@@ -132,7 +153,14 @@ export default function Portfolio() {
                 </div>
 
                 <div className="w-full flex flex-col items-start overflow-hidden">
-                    <Project name="Print on Demand" side="left" index={3} beforeImgClass="before:bg-[url('/images/pod-app.jpg')]">
+                    <Project 
+                        name="Print on Demand" 
+                        side="left" 
+                        index={3} 
+                        beforeImgClass="before:bg-[url('/images/pod-app.jpg')]"
+                        github="https://github.com/willp11/crypto-tracker-app"
+                        liveUrl="https://snack.expo.dev/@willp111/portfolio-app"
+                    >
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className="text-slate-400 text-left">
                                 Cryptocurrency <span className="text-teal-300">portfolio tracker</span> mobile app built with <span className="text-teal-300">React Native</span>. 

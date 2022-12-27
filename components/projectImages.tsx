@@ -6,9 +6,9 @@ import { Carousel } from 'react-responsive-carousel';
 
 const projectImageLocations = [ 
     [
+        "/images/pod-app-3.jpg",
         "/images/pod-app-1.jpg",
         "/images/pod-app-2.jpg",
-        "/images/pod-app-3.jpg",
     ],
     [
         "/images/parent-teacher-app-1.png",
