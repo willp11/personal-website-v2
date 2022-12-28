@@ -18,10 +18,10 @@ export default function About() {
     // List of technologies
     const tech_list = technologies.map((tech)=>{
         return (
-            <div className="flex items-center" key={tech}>
+            <li className="flex items-center text-slate-300" key={tech} style={{fontFamily: "Ubuntu-Mono"}}>
                 <PlusCircleIcon className="stroke-teal-300 h-3 w-3 mr-2" />
-                <li className="text-slate-300" style={{fontFamily: "Ubuntu-Mono"}}>{tech}</li>
-            </div>
+                {tech}
+            </li>
         )
     })
 
