@@ -36,7 +36,7 @@ export default function Hero() {
                 <h2 className={jobClass} style={{transitionDelay: '600ms'}}>Software Engineer</h2>
                 <p className={paraClass} style={{transitionDelay: '800ms'}}>I'm a software engineer specializing in building full-stack web applications with React/NextJS frontend and Python Django backend. My goal is to build large-scale applications used by millions of people.</p>
                 <div style={{fontFamily: "Ubuntu-Mono", transitionDelay: '1000ms'}} className={btnClass}>
-                    <a href="#Portfolio">
+                    <a href="#Portfolio" aria-label="Navigate to portfolio section">
                     <div className="text-teal-300 border border-teal-300 px-4 py-2 mt-8 w-[250px] cursor-pointer rounded-md hover:bg-slate-800 transition duration-500 ease-in-out">Check out my portfolio!</div>
                     </a>
                 </div>

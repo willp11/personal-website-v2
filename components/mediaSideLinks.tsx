@@ -19,16 +19,16 @@ export default function MediaSideLinks() {
 
     return (
         <div className={className}>
-            <a href="https://twitter.com/will_page_dev" target="_blank" rel="noreferrer">
+            <a href="https://twitter.com/will_page_dev" target="_blank" rel="noreferrer" aria-label="Link to Twitter">
                 <TwitterLogo size="medium" />
             </a>
             <span className="my-6 xl:my-8">
-                <a href="https://github.com/willp11" target="_blank" rel="noreferrer">
+                <a href="https://github.com/willp11" target="_blank" rel="noreferrer" aria-label="Link to Github">
                     <GithubLogo size="medium" />
                 </a>
             </span>
             <span className="mb-6 xl:mb-8">
-                <a href="https://www.linkedin.com/in/william-page-80a063260" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/william-page-80a063260" target="_blank" rel="noreferrer" aria-label="Link to LinkedIn">
                     <LinkedinLogo size="medium" />
                 </a>
             </span>

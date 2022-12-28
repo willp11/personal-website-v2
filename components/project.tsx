@@ -43,10 +43,10 @@ export default function Project({name, side, index, beforeImgClass, github, live
             <div className="flex mt-4">
                 {/* <VideoCameraIcon className="w-6 h-6 stroke-slate-300 hover:stroke-teal-300 transition ease-in-out duration-300 cursor-pointer mr-4" /> */}
                 {setShowProjectImages && <CameraIcon onClick={()=>showProjectImagesHandler()} className="w-6 h-6 stroke-slate-300 hover:stroke-teal-300 transition ease-in-out duration-300 cursor-pointer mr-4" />}
-                <a href={liveUrl} target="_blank" rel="noreferrer">
+                <a href={liveUrl} target="_blank" rel="noreferrer" aria-label={`Link to ${name} project live site`}>
                     <ArrowTopRightOnSquareIcon className="w-6 h-6 stroke-slate-300 hover:stroke-teal-300 transition ease-in-out duration-300 cursor-pointer mr-4" />
                 </a>
-                <a href={github} target="_blank" rel="noreferrer">
+                <a href={github} target="_blank" rel="noreferrer" aria-label={`Link to ${name} github page`}>
                     <GithubLogo size="small" />
                 </a>
             </div>

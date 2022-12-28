@@ -23,7 +23,7 @@ export default function MobileNav({menuItems, active, setActive}: {menuItems: st
         } else {
             return (
                 <div key={i} style={{fontFamily: "Ubuntu-Mono", padding: "1rem" }}>
-                    <a href={`#${item}`} className="group" onClick={()=>setActive(false)}>
+                    <a href={`#${item}`} className="group" onClick={()=>setActive(false)} aria-label={`Navigate to ${item}`}>
                         <span className="text-teal-300 cursor-pointer">0{i+1}. </span>
                         <span className="text-slate-300 group-hover:text-teal-300 transition duration-500 ease-in-out">{item}</span>
                     </a>

@@ -16,7 +16,7 @@ export default function Email() {
 
     return (
         <div className={className}>
-            <a href="mailto: will_page_dev@proton.me" target="_blank" rel="noreferrer">
+            <a href="mailto: will_page_dev@proton.me" target="_blank" rel="noreferrer" aria-label="Send email">
                 <p style={{fontFamily: "Ubuntu-Mono"}} 
                     className="cursor-pointer text-slate-300 hover:text-teal-300 text-lg transition ease-in-out duration 300"
                 >
