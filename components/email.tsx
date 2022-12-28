@@ -16,11 +16,11 @@ export default function Email() {
 
     return (
         <div className={className}>
-            <a href="mailto: willp111@protonmail.com">
+            <a href="mailto: will_page_dev@proton.me">
                 <p style={{fontFamily: "Ubuntu-Mono"}} 
                     className="cursor-pointer text-slate-300 hover:text-teal-300 text-lg transition ease-in-out duration 300"
                 >
-                    willp111@protonmail.com
+                    will_page_dev@proton.me
                 </p>
             </a>
             <div className="h-[1px] w-[100px] bg-slate-400 ml-8"></div>
