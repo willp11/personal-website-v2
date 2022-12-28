@@ -19,9 +19,19 @@ export default function MediaSideLinks() {
 
     return (
         <div className={className}>
-            <a href="https://twitter.com/will_page_dev" target="_blank"><TwitterLogo size="medium" /></a>
-            <span className="my-6 xl:my-8"><a href="https://github.com/willp11" target="_blank"><GithubLogo size="medium" /></a></span>
-            <span className="mb-6 xl:mb-8"><a href="https://www.linkedin.com/in/william-page-80a063260" target="_blank"><LinkedinLogo size="medium" /></a></span>
+            <a href="https://twitter.com/will_page_dev" target="_blank" rel="noreferrer">
+                <TwitterLogo size="medium" />
+            </a>
+            <span className="my-6 xl:my-8">
+                <a href="https://github.com/willp11" target="_blank" rel="noreferrer">
+                    <GithubLogo size="medium" />
+                </a>
+            </span>
+            <span className="mb-6 xl:mb-8">
+                <a href="https://www.linkedin.com/in/william-page-80a063260" target="_blank" rel="noreferrer">
+                    <LinkedinLogo size="medium" />
+                </a>
+            </span>
             <div className="w-[1px] h-[70px] xl:h-[100px] bg-slate-500"></div>
         </div>
     )

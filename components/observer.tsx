@@ -18,9 +18,10 @@ export default function Observer({children}: {children: React.ReactNode}) {
 
     useEffect(()=>{
         const observer = new IntersectionObserver(callbackFunction, options);
-        if (containerRef.current) observer.observe(containerRef.current);
+        const observedNode = containerRef.current;
+        if (observedNode) observer.observe(observedNode);
         return () => {
-            if (containerRef.current) observer.unobserve(containerRef.current);
+            if (observedNode) observer.unobserve(observedNode);
         }
     }, [])
 
