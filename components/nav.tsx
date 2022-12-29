@@ -7,9 +7,11 @@ export default function Nav({menuItems, active}: {menuItems: string[], active: b
     let menu = menuItems.map((item, i)=>{
         if (item === "Resume") {
             return (
-                <div style={{fontFamily: "Ubuntu-Mono", transitionDelay: `${i * 200}ms`}} key={i} className={className}>
-                    <div className="text-teal-300 border border-teal-300 px-4 py-2 ml-4 rounded-md hover:bg-slate-800 transition duration-500 ease-in-out">{item}</div>
-                </div>
+                <a key={i} href="/WilliamPageCV.pdf" aria-label="Download resume" download>
+                    <div style={{fontFamily: "Ubuntu-Mono", transitionDelay: `${i * 200}ms`}} className={className}>
+                        <div className="text-teal-300 border border-teal-300 px-4 py-2 ml-4 rounded-md hover:bg-slate-800 transition duration-500 ease-in-out">{item}</div>
+                    </div>
+                </a>
             )
         } else {
             return ( 
