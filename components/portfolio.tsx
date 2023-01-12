@@ -91,14 +91,15 @@ export default function Portfolio() {
                         index={0} 
                         beforeImgClass="before:bg-[url('/images/pod-app.jpg')]"
                         github="https://github.com/willp11/print-on-demand"
-                        liveUrl="https://print-on-demand-v14a.vercel.app"
+                        liveUrl="https://print-thailand.vercel.app"
                     >
                         <div className="w-full max-w-[500px] bg-[#112240] rounded px-8 py-4 z-10">
                             <p className={width <= 768 ? "text-slate-400 text-left" : "text-slate-400 text-right"}>
-                                <span className="text-teal-300">E-commerce</span> website with built in <span className="text-teal-300">product customizer</span>. 
+                                <span className="text-teal-300">Print on demand platform</span> built for a print shop/clothing manufacturer with built in <span className="text-teal-300">product customizer</span>. 
                                 Users can upload images and add text to <span className="text-teal-300">create clothing designs</span>.
                                 They can save their designs to use again and apply to all products found in the store.
                                 Designs are <span className="text-teal-300">transformed into high-resolution images</span>, ready for printing onto apparel.
+                                Built using a stack of <span className="text-teal-300">React JS, Next JS, Tailwind, Django, and Docker</span>.
                             </p>
                         </div>
                         <div className="flex flex-wrap mt-4 z-10">
